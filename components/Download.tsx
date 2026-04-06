@@ -16,17 +16,30 @@ export default function Download() {
                 </motion.h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {[
-                        { icon: "apple", label: "Download on the", store: "App Store" },
-                        { icon: "play_arrow", label: "Get it on", store: "Google Play" }
+                        { 
+                            icon: "apple", 
+                            label: "Download on the", 
+                            store: "App Store",
+                            link: "https://apps.apple.com/app/id6756720889"
+                        },
+                        { 
+                            icon: "play_arrow", 
+                            label: "Get it on", 
+                            store: "Google Play",
+                            link: "https://play.google.com/store/apps/details?id=com.aiutilities"
+                        }
                     ].map((card, index) => (
-                        <motion.div
+                        <motion.a
                             key={index}
+                            href={card.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2, duration: 0.5 }}
                             whileHover={{ y: -5, scale: 1.02 }}
-                            className="brand-gradient p-10 rounded-2xl text-white flex flex-col items-center justify-center gap-6 shadow-xl cursor-pointer transition-shadow hover:shadow-primary/20 group"
+                            className="brand-gradient p-10 rounded-2xl text-white flex flex-col items-center justify-center gap-6 shadow-xl cursor-pointer transition-shadow hover:shadow-primary/20 group no-underline"
                         >
                             {card.icon === "apple" ? (
                                 <svg className="w-16 h-16 fill-current" viewBox="0 0 384 512">
@@ -41,7 +54,7 @@ export default function Download() {
                                 <p className="text-sm opacity-90 mb-1">{card.label}</p>
                                 <h3 className="text-2xl font-black">{card.store}</h3>
                             </div>
-                        </motion.div>
+                        </motion.a>
                     ))}
                 </div>
             </div>
