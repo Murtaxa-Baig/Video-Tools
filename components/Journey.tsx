@@ -6,7 +6,7 @@ const milestones = [
     {
         year: "2024",
         title: "The Founding",
-        description: "A small team of engineers and writers came together with a vision to democratize high-end AI writing tools.",
+        description: "A small team of engineers and writers came together with a vision to democratize high-end AI Writer tools.",
         icon: "rocket_launch",
     },
     {
@@ -18,7 +18,7 @@ const milestones = [
     {
         year: "2026",
         title: "Global Expansion",
-        description: "Launched our flagship mobile apps and expanded our suite to 8 specialized AI writing categories.",
+        description: "Launched our flagship mobile apps and expanded our suite to 8 specialized AI Writer categories.",
         icon: "public",
     },
 ];

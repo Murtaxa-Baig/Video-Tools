@@ -27,7 +27,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-2 min-w-0">
                         <Image
                             src="/image/logo.png"
-                            alt="AI Writing Logo"
+                            alt="AI Writer Logo"
                             width={36}
                             height={36}
                             className="object-contain"
@@ -36,7 +36,7 @@ export default function Navbar() {
                             href="/"
                             className="text-[#131118] dark:text-white text-xl font-bold tracking-tight truncate"
                         >
-                            AI Writing
+                            AI Writer
                         </Link>
                     </div>
 
