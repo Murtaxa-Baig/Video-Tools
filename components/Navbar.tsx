@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "./Logo";
+import Image from "next/image";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +25,18 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex items-center gap-2 min-w-0">
-                        <Logo size={36} />
+                        <Image
+                            src="/image/logo.png"
+                            alt="AI Writing Logo"
+                            width={36}
+                            height={36}
+                            className="object-contain"
+                        />
                         <Link
                             href="/"
                             className="text-[#131118] dark:text-white text-xl font-bold tracking-tight truncate"
                         >
-                            AI Writer
+                            AI Writing
                         </Link>
                     </div>
 

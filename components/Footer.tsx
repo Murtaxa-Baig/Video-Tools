@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./Logo";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -8,8 +8,14 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-800 pb-12">
                     <div>
                         <div className="flex items-center gap-2 mb-4">
-                            <Logo size={36} />
-                            <span className="text-xl font-bold">AI Writer</span>
+                            <Image
+                                src="/image/logo.png"
+                                alt="AI Writing Logo"
+                                width={36}
+                                height={36}
+                                className="object-contain rounded-lg"
+                            />
+                            <span className="text-xl font-bold">AI Writing</span>
                         </div>
                         <p className="text-gray-400 text-sm max-w-xs">
                             Revolutionizing the way you write with high-performance AI tools
