@@ -35,7 +35,7 @@ export default function TermsContent() {
                         title: "1. Acceptance of Agreement",
                         content: (
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                By accessing or using AI Writer (“Service”), you agree to be legally bound by these Terms & Conditions. If you disagree with any provision, you must immediately cease use of the Service.
+                                By accessing or using AI Chat Assistant (“Service”), you agree to be legally bound by these Terms & Conditions. If you disagree with any provision, you must immediately cease use of the Service.
                             </p>
                         )
                     },
@@ -46,7 +46,7 @@ export default function TermsContent() {
                             <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                                 <li className="flex gap-3">
                                     <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“Platform”:</span>
-                                    <span>Refers to AI Writer website.</span>
+                                    <span>Refers to AI Chat Assistant website.</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“User”:</span>
@@ -69,7 +69,7 @@ export default function TermsContent() {
                         content: (
                             <>
                                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                                    AI Writer provides AI-powered tools including Essay Generator, Story Generator, Poem Generator, Email Writer, AI Summarizer, AI Paraphraser, AI Humanizer, and AI Detector.
+                                    AI Chat Assistant provides AI-powered tools including Essay Generator, Story Generator, Poem Generator, Email Writer, AI Summarizer, AI Paraphraser, AI Humanizer, and AI Detector.
                                 </p>
                                 <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
                                     <p className="text-sm text-gray-600 dark:text-gray-400 italic">
@@ -133,7 +133,7 @@ export default function TermsContent() {
                             <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                                 <li>• Users may cancel subscriptions at any time.</li>
                                 <li>• Refund eligibility depends on applicable payment provider policies.</li>
-                                <li>• AI Writer reserves the right to refuse refund requests in cases of abuse or excessive usage.</li>
+                                <li>• AI Chat Assistant reserves the right to refuse refund requests in cases of abuse or excessive usage.</li>
                             </ul>
                         )
                     },
@@ -166,7 +166,7 @@ export default function TermsContent() {
                         content: (
                             <div className="space-y-4 text-gray-600 dark:text-gray-400">
                                 <p className="leading-relaxed">
-                                    All branding, design, structure, and software remain the exclusive property of AI Writer.
+                                    All branding, design, structure, and software remain the exclusive property of AI Chat Assistant.
                                 </p>
                                 <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/10 border border-amber-100 dark:border-amber-900/20 font-bold text-amber-800 dark:text-amber-400">
                                     Unauthorized copying, distribution, or resale is strictly prohibited.
@@ -193,7 +193,7 @@ export default function TermsContent() {
                                     AI-generated content may contain inaccuracies, bias, or outdated information.
                                 </p>
                                 <p className="leading-relaxed">
-                                    AI Writer makes no guarantees regarding reliability or completeness. Users are solely responsible for verifying outputs before professional or academic use.
+                                    AI Chat Assistant makes no guarantees regarding reliability or completeness. Users are solely responsible for verifying outputs before professional or academic use.
                                 </p>
                             </div>
                         )
@@ -203,7 +203,7 @@ export default function TermsContent() {
                         title: "12. Limitation of Liability",
                         content: (
                             <>
-                                <p className="text-gray-600 dark:text-gray-400 mb-4">To the maximum extent permitted by law, AI Writer shall not be liable for:</p>
+                                <p className="text-gray-600 dark:text-gray-400 mb-4">To the maximum extent permitted by law, AI Chat Assistant shall not be liable for:</p>
                                 <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
                                     <li>• Indirect or consequential damages</li>
                                     <li>• Loss of profits or data</li>
@@ -217,7 +217,7 @@ export default function TermsContent() {
                         title: "13. Indemnification",
                         content: (
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                You agree to indemnify and hold harmless AI Writer against claims arising from misuse or violation of these Terms.
+                                You agree to indemnify and hold harmless AI Chat Assistant against claims arising from misuse or violation of these Terms.
                             </p>
                         )
                     },

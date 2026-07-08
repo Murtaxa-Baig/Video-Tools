@@ -40,7 +40,7 @@ export default function PrivacyContent() {
                         title: "1. Introduction",
                         content: (
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                This Privacy Policy outlines how AI Writer collects, processes, stores, and protects personal data.
+                                This Privacy Policy outlines how AI Chat Assistant collects, processes, stores, and protects personal data.
                             </p>
                         )
                     },
