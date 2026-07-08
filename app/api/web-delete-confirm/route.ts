@@ -12,7 +12,8 @@ export async function POST(request: Request) {
             );
         }
 
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+        let baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://aiwriterprobackend-production.up.railway.app/api/user";
+        baseUrl = baseUrl.replace(/^['"]|['"]$/g, "");
         const apiUrl = `${baseUrl}/web-delete-confirm`;
 
         const response = await fetch(apiUrl, {

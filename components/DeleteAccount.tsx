@@ -37,7 +37,7 @@ export default function DeleteAccount() {
         setIsModalOpen(false);
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/web-delete-request`, {
+            const response = await fetch(`/api/web-delete-request`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
