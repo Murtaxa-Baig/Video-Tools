@@ -12,7 +12,7 @@ export async function POST(request: Request) {
             );
         }
 
-        let baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://aiwriterprobackend-production.up.railway.app/api/user";
+        let baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://aiwriterprobackend-production-977e.up.railway.app/api/user";
         baseUrl = baseUrl.replace(/^['"]|['"]$/g, "");
         const apiUrl = `${baseUrl}/web-delete-confirm`;
 

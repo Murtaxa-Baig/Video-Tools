@@ -10,12 +10,12 @@ export default function Footer() {
                         <div className="flex items-center gap-2 mb-4">
                             <Image
                                 src="/image/logo.png"
-                                alt="AI Chat Assistant Logo"
+                                alt="AI Chat Logo"
                                 width={36}
                                 height={36}
                                 className="object-contain rounded-lg"
                             />
-                            <span className="text-xl font-bold">AI Chat Assistant</span>
+                            <span className="text-xl font-bold">AI Chat</span>
                         </div>
                         <p className="text-gray-400 text-sm max-w-xs">
                             Revolutionizing the way you write with high-performance AI tools
