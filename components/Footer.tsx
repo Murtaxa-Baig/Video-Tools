@@ -4,6 +4,8 @@ import Image from "next/image";
 export default function Footer() {
     return (
         <footer className="bg-[#131118] text-white py-4 border-t border-gray-800">
+            {/* project-716448996918 */}
+            <meta name="google-site-verification" content="project-716448996918" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-800 pb-12">
                     <div>
@@ -87,7 +89,7 @@ export default function Footer() {
                 </div>
                 <div className="flex md:flex-row justify-center items-center pt-4 gap-4">
                     <p className="text-gray-500 text-sm ">
-                        Copyright © 2024 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved.
+                        Copyright © 2026 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved.
                     </p>
                     {/* <div className="flex gap-6">
                         <Link

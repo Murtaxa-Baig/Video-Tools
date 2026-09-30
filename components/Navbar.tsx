@@ -21,6 +21,8 @@ export default function Navbar() {
     return (
         <nav className={`sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur border-b border-gray-200 dark:border-gray-800 transition-shadow duration-300 ${scrolled ? "shadow-lg" : ""
             }`}>
+            {/* project-716448996918 */}
+            <meta name="google-site-verification" content="project-716448996918" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
