@@ -17,11 +17,17 @@ export default function Footer() {
                                 height={36}
                                 className="object-contain rounded-lg"
                             />
-                            <span className="text-xl font-bold">AI Chat</span>
+                            <div className="flex flex-col">
+                                <span className="text-xl font-bold">AI Chat</span>
+                                <span className="text-xs text-primary font-semibold">AI Utilities &middot; Project: project-716448996918</span>
+                            </div>
                         </div>
-                        <p className="text-gray-400 text-sm max-w-xs">
+                        <p className="text-gray-400 text-sm max-w-xs mb-3">
                             Revolutionizing the way you write with high-performance AI tools
                             for every occasion.
+                        </p>
+                        <p className="text-xs text-gray-500">
+                            Support: <a href="mailto:supportappnaya@gmail.com" className="text-gray-400 hover:text-white transition-colors">supportappnaya@gmail.com</a>
                         </p>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
@@ -89,7 +95,7 @@ export default function Footer() {
                 </div>
                 <div className="flex md:flex-row justify-center items-center pt-4 gap-4">
                     <p className="text-gray-500 text-sm ">
-                        Copyright © 2026 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved.
+                        Copyright © 2026 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved. &middot; Google Cloud Project: <code className="text-xs text-gray-400">project-716448996918</code>
                     </p>
                     {/* <div className="flex gap-6">
                         <Link

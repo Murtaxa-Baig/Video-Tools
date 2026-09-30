@@ -12,6 +12,10 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="flex-1 text-center lg:text-left"
                 >
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-6 border border-primary/20">
+                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span>AI Chat &middot; (project-716448996918)</span>
+                    </div>
                     <h1 className="text-4xl md:text-6xl font-black text-[#131118] dark:text-white leading-[1.1] mb-6 tracking-tight">
                         Generate Human-Like AI Content in Seconds
                     </h1>
