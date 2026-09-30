@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AI Chat",
   description: "Generate Human-Like AI Content in Seconds",
+  verification: {
+    google: "4edXJTMyV4nhq0qY_zalMGnNG0QlH5oEJP6IiO_9qlY",
+  },
 };
 
 export default function RootLayout({
