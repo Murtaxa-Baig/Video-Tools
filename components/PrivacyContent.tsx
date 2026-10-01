@@ -116,8 +116,8 @@ export default function PrivacyContent() {
                                     <div className="flex items-start gap-4">
                                         <span className="material-symbols-outlined text-primary">security</span>
                                         <div>
-                                            <h4 className="font-bold text-[#131118] dark:text-white text-base">Firebase</h4>
-                                            <p className="text-sm text-[#6b608a] dark:text-[#a097bd]">Authentication services</p>
+                                            <h4 className="font-bold text-[#131118] dark:text-white text-base">Google OAuth &amp; Firebase</h4>
+                                            <p className="text-sm text-[#6b608a] dark:text-[#a097bd]">User authentication and account security</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
@@ -128,9 +128,12 @@ export default function PrivacyContent() {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="mt-4 text-xs text-[#6b608a] dark:text-[#a097bd] italic">
-                                    These providers may process data under their own privacy policies.
-                                </p>
+                                <div className="mt-6 p-4 rounded-lg bg-white dark:bg-[#1c182b] border border-primary/20">
+                                    <h5 className="font-bold text-sm text-[#131118] dark:text-white mb-1">Google API Services User Data Policy Compliance</h5>
+                                    <p className="text-xs text-[#6b608a] dark:text-[#a097bd] leading-relaxed">
+                                        AI Chat&apos;s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="text-primary underline">Google API Services User Data Policy</a>, including the Limited Use requirements.
+                                    </p>
+                                </div>
                             </div>
                         )
                     },
