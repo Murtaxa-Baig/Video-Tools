@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Chat",
-  description: "AI Chat by AppNaya Technologies. Generate Human-Like AI Content in Seconds.",
+  title: "Video Editor - AI Video Enhancer, Compressor & 4K Upscaler",
+  description:
+    "All-in-one AI video toolkit. Compress videos without quality loss, enhance clarity with AI, upscale HD to 2K/4K, adjust video speed, extract audio, and manage media history.",
   verification: {
     google: [
       "4edXJTMyV4nhq0qY_zalMGnNG0QlH5oEJP6IiO_9qlY",

@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 
 const values = [
     {
-        title: "Productivity",
-        description: "Reducing the friction between thought and draft, helping you achieve more in less time.",
-        icon: "bolt",
+        title: "Uncompromised Quality",
+        description: "Compressing video sizes by up to 80% while retaining crisp focal details, vivid colors, and smooth frame rates.",
+        icon: "high_quality",
     },
     {
-        title: "Accuracy",
-        description: "Ensuring every output meets high linguistic standards and contextual relevance.",
+        title: "Neural Super-Resolution",
+        description: "Pushing the frontiers of AI upscaling to transform standard HD footage into genuine 2K and 4K ultra-high definition.",
+        icon: "auto_fix_high",
+    },
+    {
+        title: "Absolute Media Privacy",
+        description: "Your videos belong entirely to you. We never train public models with your uploads, and you can download all your data anytime.",
         icon: "verified_user",
     },
     {
-        title: "Human-Centric",
-        description: "Designing tools that enhance human intent rather than obscuring it with robotic outputs.",
-        icon: "face",
-    },
-    {
-        title: "Innovation",
-        description: "Constantly evolving our models to stay at the cutting edge of AI technology.",
-        icon: "psychology_alt",
+        title: "Blazing GPU Speed",
+        description: "Engineered with turbo-accelerated cloud rendering queues for instantaneous compression, speed ramps, and audio extraction.",
+        icon: "bolt",
     },
 ];
 
@@ -50,7 +50,10 @@ export default function Values() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl font-bold text-[#131118] dark:text-white">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4 border border-primary/20">
+                        <span>What Drives Us</span>
+                    </div>
+                    <h2 className="text-3xl sm:text-4xl font-black text-[#131118] dark:text-white">
                         Our Core Values
                     </h2>
                 </motion.div>
@@ -65,18 +68,18 @@ export default function Values() {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            whileHover={{ y: -8, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
-                            className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 group transition-shadow"
+                            whileHover={{ y: -6, boxShadow: "0 12px 24px -6px rgba(255, 102, 0, 0.15)" }}
+                            className="bg-white dark:bg-gray-800/50 p-8 rounded-2xl border border-gray-100 dark:border-gray-800 transition-all duration-300"
                         >
-                            <div className="w-14 h-14 rounded-xl brand-gradient flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                                <span className="material-symbols-outlined text-white text-3xl">
+                            <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                                <span className="material-symbols-outlined text-2xl">
                                     {value.icon}
                                 </span>
                             </div>
-                            <h3 className="text-xl font-bold text-[#131118] dark:text-white mb-4">
+                            <h3 className="text-lg font-bold text-[#131118] dark:text-white mb-2">
                                 {value.title}
                             </h3>
-                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                                 {value.description}
                             </p>
                         </motion.div>

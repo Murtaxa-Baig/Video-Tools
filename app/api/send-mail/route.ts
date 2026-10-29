@@ -44,10 +44,11 @@ export async function POST(request: Request) {
             message: "Email sent successfully",
             id: info.messageId,
         });
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("MAIL_ERROR:", error);
+        const errorMessage = error instanceof Error ? error.message : "Internal server error";
         return NextResponse.json(
-            { error: error?.message || "Internal server error" },
+            { error: errorMessage },
             { status: 500 }
         );
     }

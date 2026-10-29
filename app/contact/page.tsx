@@ -1,8 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ContactHero from "@/components/ContactHero";
 import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
+
+export const metadata: Metadata = {
+    title: "Contact & Support - Video Editor",
+    description: "Get in touch with the Video Editor team for product support, subscription inquiries, and data export requests.",
+};
 
 export default function ContactPage() {
     return (

@@ -66,10 +66,11 @@ export default function ContactForm() {
                 subject: "",
                 message: "",
             });
-        } catch (error: any) {
+        } catch (error: unknown) {
+            const errorMessage = error instanceof Error ? error.message : "An error occurred. Please try again later.";
             setSubmitStatus({
                 type: "error",
-                message: error.message || "An error occurred. Please try again later.",
+                message: errorMessage,
             });
         } finally {
             setIsSubmitting(false);

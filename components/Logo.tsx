@@ -10,59 +10,55 @@ export default function Logo({ className = "", size = 32 }: LogoProps) {
         <svg
             width={size}
             height={size}
-            viewBox="0 0 1024 1024"
+            viewBox="0 0 100 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
         >
-            <rect width="1024" height="1024" fill="transparent" />
-            <path
-                d="M400.797 300.188C409.262 274.607 436.862 260.732 462.443 269.196C488.024 277.661 501.9 305.261 493.435 330.842C438.778 496.018 392.098 601.293 323.453 715.675L545.633 616.005C570.218 604.976 599.089 615.966 610.118 640.551C621.146 665.136 610.157 694.006 585.572 705.034L212.687 872.31C192.753 881.252 169.305 875.852 155.291 859.092C141.276 842.332 140.112 818.298 152.442 800.262C272.196 625.084 328.271 519.367 400.797 300.188Z"
-                fill="url(#paint0_linear_logo)"
-            />
-            <path
-                d="M431.362 265.855C456.864 257.154 484.59 270.774 493.291 296.276C509.131 342.704 547.886 434.7 599.634 531.275C628.605 585.344 660.856 639.328 694.544 686.934V493.245C694.544 466.3 716.388 444.456 743.333 444.456C770.278 444.456 792.121 466.3 792.121 493.245V820.826C792.121 840.374 780.453 858.035 762.472 865.704C744.49 873.372 723.668 869.567 709.561 856.036C635.582 785.077 567.04 677.048 513.625 577.361C459.839 476.981 418.789 380.095 400.941 327.784C392.241 302.282 405.861 274.556 431.362 265.855Z"
-                fill="url(#paint1_linear_logo)"
-            />
-            <path
-                d="M736.797 151.965C739.042 145.897 747.624 145.897 749.87 151.965L751.553 156.513C772.025 211.838 815.646 255.459 870.971 275.931L875.519 277.614C881.587 279.859 881.587 288.442 875.519 290.687L870.971 292.37C815.646 312.842 772.025 356.463 751.553 411.788L749.87 416.336C747.624 422.404 739.042 422.404 736.797 416.336L735.114 411.788C714.641 356.463 671.021 312.842 615.695 292.37L611.147 290.687C605.079 288.442 605.079 279.859 611.147 277.614L615.695 275.931C671.021 255.459 714.641 211.838 735.114 156.513L736.797 151.965Z"
-                fill="url(#paint2_linear_logo)"
-            />
             <defs>
-                <linearGradient
-                    id="paint0_linear_logo"
-                    x1="880.07"
-                    y1="512"
-                    x2="143.93"
-                    y2="512"
-                    gradientUnits="userSpaceOnUse"
-                >
-                    <stop stopColor="#00CC4B" />
-                    <stop offset="1" stopColor="#0572EE" />
+                <linearGradient id="vt_gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FF6600" />
+                    <stop offset="100%" stopColor="#FF8533" />
                 </linearGradient>
-                <linearGradient
-                    id="paint1_linear_logo"
-                    x1="880.07"
-                    y1="512"
-                    x2="143.93"
-                    y2="512"
-                    gradientUnits="userSpaceOnUse"
-                >
-                    <stop stopColor="#00CC4B" />
-                    <stop offset="1" stopColor="#0572EE" />
-                </linearGradient>
-                <linearGradient
-                    id="paint2_linear_logo"
-                    x1="880.07"
-                    y1="512"
-                    x2="143.93"
-                    y2="512"
-                    gradientUnits="userSpaceOnUse"
-                >
-                    <stop stopColor="#00CC4B" />
-                    <stop offset="1" stopColor="#0572EE" />
+                <linearGradient id="vt_sparkle" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FFFFFF" />
+                    <stop offset="100%" stopColor="#FFE0B2" />
                 </linearGradient>
             </defs>
+            {/* Background rounded rect */}
+            <rect width="100" height="100" rx="24" fill="url(#vt_gradient)" />
+            {/* Subtle inner border */}
+            <rect
+                x="3"
+                y="3"
+                width="94"
+                height="94"
+                rx="21"
+                stroke="white"
+                strokeOpacity="0.25"
+                strokeWidth="2"
+            />
+            {/* Film/Video Frame motif */}
+            <path
+                d="M26 30C26 26.6863 28.6863 24 32 24H68C71.3137 24 74 26.6863 74 30V70C74 73.3137 71.3137 76 68 76H32C28.6863 76 26 73.3137 26 70V30Z"
+                fill="white"
+                fillOpacity="0.16"
+            />
+            {/* Play Symbol */}
+            <path
+                d="M42 36.5C42 34.887 43.805 33.9317 45.143 34.8306L63.5682 47.3306C64.7108 48.1009 64.7108 49.8991 63.5682 50.6694L45.143 63.1694C43.805 64.0683 42 63.113 42 61.5V36.5Z"
+                fill="white"
+            />
+            {/* AI Sparkle Star top right */}
+            <path
+                d="M74 18L75.5 22.5L80 24L75.5 25.5L74 30L72.5 25.5L68 24L72.5 22.5L74 18Z"
+                fill="url(#vt_sparkle)"
+            />
+            {/* Secondary tiny sparkle */}
+            <path
+                d="M26 72L27 75L30 76L27 77L26 80L25 77L22 76L25 75L26 72Z"
+                fill="url(#vt_sparkle)"
+            />
         </svg>
     );
 }

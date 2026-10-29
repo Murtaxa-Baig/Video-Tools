@@ -2,11 +2,9 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function DeleteAccount() {
-    const router = useRouter();
     const [email, setEmail] = useState("");
     const [reason, setReason] = useState("");
     const [customReason, setCustomReason] = useState("");
@@ -70,10 +68,11 @@ export default function DeleteAccount() {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 20 }}
                         exit={{ opacity: 0, y: -50 }}
-                        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border ${toast.type === "success"
+                        className={`fixed top-4 left-1/2 -translate-x-1/2 z-[100] px-6 py-3 rounded-xl shadow-2xl flex items-center gap-3 border ${
+                            toast.type === "success"
                                 ? "bg-emerald-500 border-emerald-400 text-white"
                                 : "bg-red-500 border-red-400 text-white"
-                            }`}
+                        }`}
                     >
                         <span className="material-symbols-outlined">
                             {toast.type === "success" ? "check_circle" : "error"}
@@ -109,8 +108,8 @@ export default function DeleteAccount() {
                                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                                     Initiate Account Deletion
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">
-                                    Are you sure you want to request account deletion? We will send a confirmation link and code to your registered email to verify your identity.
+                                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                                    Are you sure you want to request account deletion? We will send a confirmation link and verification code to your email.
                                 </p>
                             </div>
                             <div className="flex border-t border-gray-100 dark:border-gray-800">
@@ -145,10 +144,10 @@ export default function DeleteAccount() {
                         >
                             <div className="flex flex-col gap-2 text-center">
                                 <h1 className="text-[#131118] dark:text-white text-4xl mt-8 font-black leading-tight tracking-[-0.033em]">
-                                    Delete Your Account
+                                    Delete Video Editor Account
                                 </h1>
                                 <p className="text-[#6b608a] dark:text-gray-400 text-lg font-normal leading-normal">
-                                    We&apos;re sorry to see you go. This process is secure and permanent.
+                                    We&apos;re sorry to see you go. This process will permanently remove your account and media history.
                                 </p>
                             </div>
 
@@ -166,7 +165,7 @@ export default function DeleteAccount() {
                                                 type="checkbox"
                                             />
                                             <p className="text-[#131118] dark:text-gray-300 text-sm font-normal leading-normal group-hover:text-primary transition-colors">
-                                                I understand my active pro subscriptions will be cancelled without refund
+                                                I understand my active subscriptions will be cancelled and my stored media history will be permanently wiped
                                             </p>
                                         </label>
                                     </div>
@@ -176,7 +175,7 @@ export default function DeleteAccount() {
                                     <div className="flex flex-col gap-4">
                                         <label className="flex flex-col w-full">
                                             <p className="text-[#131118] dark:text-white text-sm font-semibold leading-normal pb-2">
-                                                Your Email Address
+                                                Your Account Email
                                             </p>
                                             <input
                                                 value={email}
@@ -200,8 +199,8 @@ export default function DeleteAccount() {
                                             >
                                                 <option value="">Select a reason</option>
                                                 <option value="Pricing is too high">Pricing is too high</option>
-                                                <option value="Missing specific features">Missing specific features</option>
-                                                <option value="Switching to a competitor">Switching to a competitor</option>
+                                                <option value="Missing specific video features">Missing specific video features</option>
+                                                <option value="Switching to a competitor">Switching to another tool</option>
                                                 <option value="I no longer need the service">I no longer need the service</option>
                                                 <option value="Platform is too difficult to use">Platform is too difficult to use</option>
                                                 <option value="other">Other (Please specify)</option>
@@ -227,15 +226,16 @@ export default function DeleteAccount() {
                                                     required
                                                 />
                                             </motion.label>
-                                         )}
+                                        )}
                                     </div>
 
                                     <div className="flex flex-col gap-3 pt-6">
                                         <button
                                             onClick={handleDeleteClick}
                                             disabled={isLoading || !isFormValid}
-                                            className={`w-full flex items-center justify-center rounded-xl h-14 px-8 bg-red-600 text-white hover:bg-red-700 text-base font-bold leading-normal transition-all shadow-lg shadow-red-600/20 active:scale-[0.98] ${isLoading || !isFormValid ? "opacity-50 cursor-not-allowed shadow-none" : ""
-                                                }`}
+                                            className={`w-full flex items-center justify-center rounded-xl h-14 px-8 bg-red-600 text-white hover:bg-red-700 text-base font-bold leading-normal transition-all shadow-lg shadow-red-600/20 active:scale-[0.98] ${
+                                                isLoading || !isFormValid ? "opacity-50 cursor-not-allowed shadow-none" : ""
+                                            }`}
                                         >
                                             {isLoading ? (
                                                 <div className="flex items-center gap-2">
@@ -251,11 +251,11 @@ export default function DeleteAccount() {
                             </div>
 
                             <p className="text-center text-[#6b608a] dark:text-gray-500 text-sm">
-                                Having trouble?{" "}
-                                <a className="text-primary hover:underline font-medium" href="#">
-                                    Contact our support team
-                                </a>{" "}
-                                for help instead of leaving.
+                                Need to download your videos first?{" "}
+                                <Link className="text-primary hover:underline font-medium" href="/#features">
+                                    Export your data
+                                </Link>{" "}
+                                before deleting your account.
                             </p>
                         </motion.div>
                     ) : (
@@ -267,7 +267,7 @@ export default function DeleteAccount() {
                             transition={{ type: "spring", damping: 20 }}
                             className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-8 rounded-2xl shadow-2xl text-center space-y-6 max-w-lg mx-auto"
                         >
-                            <div className="w-20 h-20 bg-indigo-50 dark:bg-indigo-950/40 text-primary rounded-full flex items-center justify-center mx-auto relative">
+                            <div className="w-20 h-20 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto relative">
                                 <span className="material-symbols-outlined text-4xl animate-bounce">
                                     mail
                                 </span>
@@ -279,42 +279,42 @@ export default function DeleteAccount() {
 
                             <div className="space-y-2">
                                 <h2 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                                    Verification Sent!
+                                    Verification Dispatched!
                                 </h2>
                                 <p className="text-gray-500 dark:text-gray-400 text-sm">
-                                    We have dispatched a verification email to
+                                    We have sent a verification email to
                                 </p>
-                                <p className="text-primary dark:text-indigo-400 font-semibold text-lg select-all">
+                                <p className="text-primary font-semibold text-lg select-all">
                                     {email}
                                 </p>
                             </div>
 
-                            <div className="bg-gray-50 dark:bg-gray-850/60 p-5 rounded-xl text-left border border-gray-100 dark:border-gray-800 text-sm text-gray-600 dark:text-gray-400 space-y-3">
+                            <div className="bg-gray-50 dark:bg-gray-800/60 p-5 rounded-xl text-left border border-gray-100 dark:border-gray-800 text-sm text-gray-600 dark:text-gray-400 space-y-3">
                                 <div className="flex gap-3">
                                     <span className="material-symbols-outlined text-emerald-500 font-bold">link</span>
-                                    <p><strong>Option 1:</strong> Click the secure <strong>"Permanently Delete My Account"</strong> magic link inside the email to navigate automatically.</p>
+                                    <p><strong>Option 1:</strong> Click the secure <strong>&quot;Permanently Delete My Account&quot;</strong> magic link inside the email.</p>
                                 </div>
                                 <div className="flex gap-3">
-                                    <span className="material-symbols-outlined text-indigo-500 font-bold">pin</span>
-                                    <p><strong>Option 2:</strong> Copy the 6-digit verification code and paste it on our verification portal.</p>
+                                    <span className="material-symbols-outlined text-primary font-bold">pin</span>
+                                    <p><strong>Option 2:</strong> Copy the 6-digit verification code and paste it on our confirmation page.</p>
                                 </div>
                             </div>
 
                             <p className="text-xs text-red-500 dark:text-red-400 font-medium">
-                                * The link and code are valid for exactly 15 minutes.
+                                * The link and code remain valid for 15 minutes.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-3 pt-4 justify-center">
                                 <Link
                                     href="/delete-account/confirm"
-                                    className="px-6 py-3 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:opacity-90 transition-all text-sm flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                                    className="px-6 py-3 brand-gradient text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:opacity-95 transition-all text-sm flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
                                 >
                                     <span>Enter Code Manually</span>
                                     <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                                 <button
                                     onClick={() => setIsVerificationSent(false)}
-                                    className="px-6 py-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-750 transition-all text-sm"
+                                    className="px-6 py-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-semibold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-all text-sm"
                                 >
                                     Back to Form
                                 </button>

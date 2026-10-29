@@ -16,26 +16,23 @@ export default function Mission() {
                     <h2 className="text-3xl font-bold text-[#131118] dark:text-white mb-8">
                         Our Mission
                     </h2>
-                    <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed italic">
-                        &quot;To empower every creative, professional, and student with AI
-                        tools that feel like a natural extension of their own
-                        intelligence, fostering a world where technology removes barriers
-                        to human expression.&quot;
+                    <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed italic">
+                        &quot;To empower every videographer, content creator, and everyday smartphone user with video utilities that feel effortless — eliminating the friction between capturing footage and delivering ultra-crisp 4K media.&quot;
                     </p>
-                    <div className="mt-12 flex justify-center gap-8">
+                    <div className="mt-12 flex justify-center gap-10">
                         {[
-                            { label: "Founded", value: "2024" },
-                            { label: "Community", value: "1M+" },
-                            { label: "Tools", value: "8+" }
+                            { label: "Videos Processed", value: "5M+" },
+                            { label: "Max Resolution", value: "4K UHD" },
+                            { label: "Core Utilities", value: "7 in 1" }
                         ].map((stat, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                transition={{ delay: 0.4 + (index * 0.1) }}
+                                transition={{ delay: 0.2 + (index * 0.1) }}
                             >
-                                <p className="text-2xl font-black brand-text-gradient">{stat.value}</p>
+                                <p className="text-3xl font-black brand-text-gradient">{stat.value}</p>
                                 <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{stat.label}</p>
                             </motion.div>
                         ))}

@@ -27,15 +27,16 @@ export async function POST(request: Request) {
         let data;
         try {
             data = await response.json();
-        } catch (e) {
+        } catch {
             data = { error: "Failed to parse response from server" };
         }
 
         return NextResponse.json(data, { status: response.status });
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("WEB_DELETE_REQUEST_PROXY_ERROR:", error);
+        const errorMessage = error instanceof Error ? error.message : "Internal server error";
         return NextResponse.json(
-            { error: error?.message || "Internal server error" },
+            { error: errorMessage },
             { status: 500 }
         );
     }

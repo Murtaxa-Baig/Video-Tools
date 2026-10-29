@@ -10,9 +10,14 @@ function DeleteConfirmFormContent() {
     const searchParams = useSearchParams();
     
     // States
-    const [token, setToken] = useState("");
+    const urlToken = searchParams.get("token") || "";
+    const [manualToken, setManualToken] = useState("");
+    const [forceManual, setForceManual] = useState(false);
+
+    const isTokenManual = forceManual || !urlToken;
+    const token = isTokenManual ? manualToken : urlToken;
+
     const [otp, setOtp] = useState(["", "", "", "", "", ""]);
-    const [isTokenManual, setIsTokenManual] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [countdown, setCountdown] = useState(5);
@@ -25,17 +30,6 @@ function DeleteConfirmFormContent() {
         setToast({ message, type });
         setTimeout(() => setToast(null), 5000);
     };
-
-    // Load token from URL search parameters
-    useEffect(() => {
-        const urlToken = searchParams.get("token");
-        if (urlToken) {
-            setToken(urlToken);
-            setIsTokenManual(false);
-        } else {
-            setIsTokenManual(true);
-        }
-    }, [searchParams]);
 
     // Countdown logic after success
     useEffect(() => {
@@ -193,7 +187,7 @@ function DeleteConfirmFormContent() {
                                             <span>Secure Token Loaded</span>
                                         </div>
                                         <button 
-                                            onClick={() => setIsTokenManual(true)}
+                                            onClick={() => setForceManual(true)}
                                             className="text-xs text-primary hover:underline font-bold transition-all"
                                         >
                                             Change Token
@@ -205,8 +199,8 @@ function DeleteConfirmFormContent() {
                                             Security Deletion Token
                                         </label>
                                         <input
-                                            value={token}
-                                            onChange={(e) => setToken(e.target.value)}
+                                            value={manualToken}
+                                            onChange={(e) => setManualToken(e.target.value)}
                                             className="form-input flex w-full rounded-lg text-[#131118] dark:text-gray-200 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 px-4 text-xs font-mono leading-normal placeholder:text-gray-400 dark:placeholder:text-gray-600"
                                             placeholder="Paste security token from email link (if not pre-filled)"
                                             type="text"

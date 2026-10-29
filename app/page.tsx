@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import Pricing from "@/components/Pricing";
 import Download from "@/components/Download";
 import AboutSection from "@/components/AboutSection";
-import ContactForm from "@/components/ContactForm";
+import FAQ from "@/components/FAQ";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,9 +16,13 @@ export default function Home() {
       <div id="features">
         <Features />
       </div>
+      <div id="pricing">
+        <Pricing />
+      </div>
       <Download />
       <AboutSection />
-
+      <FAQ />
+      <CTASection />
       <Footer />
     </main>
   );

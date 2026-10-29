@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function TermsContent() {
     return (
@@ -11,12 +12,18 @@ export default function TermsContent() {
                 transition={{ duration: 0.8 }}
                 className="mb-12 border-b border-gray-100 dark:border-gray-800 pb-8 text-center md:text-left"
             >
-                <h1 className="text-4xl md:text-5xl mt-8 font-black text-[#131118] dark:text-white mb-4">
-                    Terms & Conditions
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4 border border-primary/20">
+                    <span>Terms of Service</span>
+                </div>
+                <h1 className="text-4xl md:text-5xl font-black text-[#131118] dark:text-white mb-4">
+                    Terms &amp; Conditions
                 </h1>
+                <p className="text-[#6b608a] dark:text-[#a097bd] text-lg font-normal leading-relaxed mb-6">
+                    Please read these terms carefully before accessing or using Video Editor services, subscriptions, and video processing utilities.
+                </p>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">
                     <span className="text-gray-500 dark:text-gray-400">
-                        Last Updated: February 27, 2026
+                        Effective Date: October 29, 2026
                     </span>
                     <span className="hidden sm:inline text-gray-300">|</span>
                     <a
@@ -28,14 +35,15 @@ export default function TermsContent() {
                     </a>
                 </div>
             </motion.header>
+
             <div className="space-y-12">
                 {[
                     {
                         id: "acceptance",
                         title: "1. Acceptance of Agreement",
                         content: (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                By accessing or using AI Chat (“Service”), you agree to be legally bound by these Terms & Conditions. If you disagree with any provision, you must immediately cease use of the Service.
+                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                By downloading, installing, accessing, or using the <strong>Video Editor</strong> application, mobile software, or associated website services (&quot;the Service&quot;), operated by <strong>AppNaya Technologies</strong> (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be legally bound by these Terms &amp; Conditions. If you do not agree to all provisions of these Terms, you must immediately cease use of the Service.
                             </p>
                         )
                     },
@@ -43,240 +51,245 @@ export default function TermsContent() {
                         id: "definitions",
                         title: "2. Definitions",
                         content: (
-                            <ul className="space-y-3 text-gray-600 dark:text-gray-400">
-                                <li className="flex gap-3">
-                                    <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“Platform”:</span>
-                                    <span>Refers to AI Chat website.</span>
+                            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
+                                <li className="flex flex-col sm:flex-row sm:gap-3">
+                                    <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;Platform&quot;:</span>
+                                    <span>Refers to the Video Editor mobile apps (iOS &amp; Android), web applications, and backend processing APIs.</span>
                                 </li>
-                                <li className="flex gap-3">
-                                    <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“User”:</span>
-                                    <span>Refers to any individual accessing or using the Service.</span>
+                                <li className="flex flex-col sm:flex-row sm:gap-3">
+                                    <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;User&quot;:</span>
+                                    <span>Any individual or legal entity accessing, uploading to, or utilizing the Service.</span>
                                 </li>
-                                <li className="flex gap-3">
-                                    <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“Content”:</span>
-                                    <span>Refers to AI-generated outputs and user-submitted text.</span>
+                                <li className="flex flex-col sm:flex-row sm:gap-3">
+                                    <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;Uploaded Media&quot;:</span>
+                                    <span>Video clips, audio files, images, or instructions provided by the User for processing.</span>
                                 </li>
-                                <li className="flex gap-3">
-                                    <span className="font-bold text-[#131118] dark:text-white min-w-[100px]">“Subscription”:</span>
-                                    <span>Refers to paid access beyond daily free usage.</span>
+                                <li className="flex flex-col sm:flex-row sm:gap-3">
+                                    <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;Processed Media&quot;:</span>
+                                    <span>The resulting compressed videos, AI-enhanced files, 2K/4K upscaled footage, speed-altered clips, or extracted audio tracks generated by the Platform.</span>
+                                </li>
+                                <li className="flex flex-col sm:flex-row sm:gap-3">
+                                    <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;Subscriptions&quot;:</span>
+                                    <span>Paid recurring membership plans (Weekly, Monthly, Yearly) providing access to enhanced feature quotas, turbo GPU queues, and extended storage.</span>
                                 </li>
                             </ul>
                         )
                     },
                     {
                         id: "services",
-                        title: "3. Description of Services",
+                        title: "3. Scope of Services",
                         content: (
-                            <>
-                                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                                    AI Chat provides AI-powered tools including Essay Generator, Story Generator, Poem Generator, Email Writer, AI Summarizer, AI Paraphraser, AI Humanizer, and AI Detector.
-                                </p>
-                                <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
-                                    <p className="text-sm text-gray-600 dark:text-gray-400 italic">
-                                        AI responses are generated using third-party AI systems and may vary in quality and accuracy.
-                                    </p>
+                            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                                <p>Video Editor provides a comprehensive digital media suite enabling users to:</p>
+                                <div className="grid md:grid-cols-2 gap-3 text-sm">
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>1. Video Compression:</strong> High-efficiency bitrate reduction preserving visual quality.
+                                    </div>
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>2. AI Video Enhancement:</strong> Neural noise suppression, detail restoration, and clarity grading.
+                                    </div>
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>3. HD to 2K / 4K Upscaling:</strong> Deep-learning super-resolution frame expansion.
+                                    </div>
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>4. Speed Adjustments:</strong> Variable speedup (up to 10x) and frame interpolation.
+                                    </div>
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>5. Audio Extraction:</strong> Separating audio tracks into MP3, WAV, or AAC.
+                                    </div>
+                                    <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <strong>6. Media History &amp; Data Export:</strong> Persistent output catalog with full download rights.
+                                    </div>
                                 </div>
-                            </>
+                            </div>
                         )
                     },
                     {
-                        id: "eligibility",
-                        title: "4. User Eligibility",
+                        id: "ownership",
+                        title: "4. User Content Ownership & Intellectual Property",
                         content: (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                Users must be at least 13 years of age. By using the Service, you confirm you meet this requirement.
+                            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                                <div className="p-5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800 text-emerald-900 dark:text-emerald-300">
+                                    <h4 className="font-bold text-sm mb-1 flex items-center gap-2">
+                                        <span className="material-symbols-outlined text-base">verified</span>
+                                        You Retain 100% Ownership of Your Content
+                                    </h4>
+                                    <p className="text-xs sm:text-sm leading-relaxed">
+                                        You retain all existing copyright, trademarks, and intellectual property rights in your Uploaded Media and the resulting Processed Media. Video Editor claims zero ownership, licensing, or commercial rights over the videos you compress, upscale, or export.
+                                    </p>
+                                </div>
+                                <p className="text-sm">
+                                    You grant Video Editor only the narrow, non-exclusive, temporary operational license required to receive, encode, enhance, and deliver your media back to you.
+                                </p>
+                                <p className="text-sm">
+                                    You warrant and certify that you own or have obtained all necessary licenses, permissions, and rights to submit the videos you process on the Platform.
+                                </p>
+                            </div>
+                        )
+                    },
+                    {
+                        id: "subscriptions",
+                        title: "5. Subscription Tiers & Billing Terms",
+                        content: (
+                            <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>Video Editor offers tiered premium subscriptions to enhance processing speed, allow 4K exports, and maintain longer media history:</p>
+                                
+                                <div className="space-y-2.5">
+                                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <h5 className="font-bold text-[#131118] dark:text-white">Weekly Subscription ($4.99/week)</h5>
+                                        <p className="text-xs text-gray-500">Short-term access with 2K upscaling, lossless compression, and 7-day media history retention.</p>
+                                    </div>
+                                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <h5 className="font-bold text-[#131118] dark:text-white">Monthly Subscription ($12.99/month)</h5>
+                                        <p className="text-xs text-gray-500">Standard creator plan with full 4K AI upscaling, turbo GPU processing queue, and 30-day media history retention.</p>
+                                    </div>
+                                    <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
+                                        <h5 className="font-bold text-[#131118] dark:text-white">Yearly Subscription ($49.99/year)</h5>
+                                        <p className="text-xs text-gray-500">Best value plan with unlimited 4K processing, VIP queue, unlimited history retention, and priority support.</p>
+                                    </div>
+                                </div>
+
+                                <ul className="list-disc pl-5 space-y-2 text-xs sm:text-sm pt-2">
+                                    <li><strong>Billing &amp; Renewal:</strong> Subscriptions are billed through your Apple App Store or Google Play account. Subscriptions automatically renew unless cancelled at least 24 hours prior to the conclusion of the active billing cycle.</li>
+                                    <li><strong>Price Adjustments:</strong> We reserve the right to revise subscription rates upon reasonable advance notice. Existing terms remain locked until the current renewal cycle.</li>
+                                </ul>
+                            </div>
+                        )
+                    },
+                    {
+                        id: "cancellation",
+                        title: "6. Cancellation & Refund Policy",
+                        content: (
+                            <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>
+                                    You may cancel your subscription at any time directly through the <em>Subscriptions</em> management panel in your Apple ID or Google Play Store settings. Upon cancellation, your subscription remains active until the end of the paid billing interval.
+                                </p>
+                                <p>
+                                    Refund requests are governed by the respective policies of the Apple App Store or Google Play Store. Video Editor cannot directly issue refunds for purchases completed via third-party application stores.
+                                </p>
+                            </div>
+                        )
+                    },
+                    {
+                        id: "data-export",
+                        title: "7. Media History & Data Download Rights",
+                        content: (
+                            <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>
+                                    Users have the right to download, backup, and export all their processed media files and metadata. You can trigger individual downloads or request a full data archive from the application interface.
+                                </p>
+                                <p className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/30 text-amber-900 dark:text-amber-300 text-xs">
+                                    <strong>Important Note on Cloud Storage:</strong> While Video Editor maintains your Media History according to your subscription tier, the Service is intended as a processing engine rather than a permanent archival backup. We strongly recommend downloading and preserving your completed videos locally or to your personal cloud storage.
+                                </p>
+                            </div>
+                        )
+                    },
+                    {
+                        id: "acceptable-use",
+                        title: "8. Acceptable Use Policy",
+                        content: (
+                            <div className="space-y-4">
+                                <p className="text-gray-600 dark:text-gray-300 text-sm">You strictly agree NOT to use Video Editor to upload, process, or disseminate:</p>
+                                <div className="grid md:grid-cols-2 gap-3 text-xs sm:text-sm">
+                                    {[
+                                        "Infringing or unauthorized copyrighted videos or audio",
+                                        "Child sexual abuse material (CSAM) or exploitation",
+                                        "Violent, defamatory, harassing, or terrorist content",
+                                        "Malware, infected video containers, or malicious scripts",
+                                        "Any content violating regional or international laws",
+                                        "Attempts to reverse engineer or overload server GPU queues"
+                                    ].map((item, i) => (
+                                        <div key={i} className="flex gap-2.5 items-center p-3 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-100 dark:border-red-900/30">
+                                            <span className="material-symbols-outlined text-red-500 text-base shrink-0">block</span>
+                                            <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )
+                    },
+                    {
+                        id: "intellectual-property",
+                        title: "9. Video Editor Intellectual Property",
+                        content: (
+                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                The Video Editor name, logo, graphic designs, interfaces, code, algorithms, and documentation are the exclusive intellectual property of AppNaya Technologies. You may not copy, reverse-engineer, decompile, resell, or distribute any part of the Platform software without written consent.
                             </p>
                         )
                     },
                     {
-                        id: "account",
-                        title: "5. Account Registration & Security",
-                        content: (
-                            <div className="space-y-4 text-gray-600 dark:text-gray-400">
-                                <p className="leading-relaxed">
-                                    Registration is completed via Google Authentication using Firebase.
-                                </p>
-                                <p className="leading-relaxed">
-                                    You are responsible for maintaining confidentiality of your account and all activities under it.
-                                </p>
-                            </div>
-                        )
-                    },
-                    {
-                        id: "subscription",
-                        title: "6. Free Access and Subscription Terms",
-                        content: (
-                            <ul className="space-y-4 text-gray-600 dark:text-gray-400">
-                                <li className="flex gap-3">
-                                    <span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>
-                                    <span>Each registered user receives three (3) free queries per day.</span>
-                                </li>
-                                <li className="flex gap-3">
-                                    <span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>
-                                    <span>Unlimited access requires an active paid subscription.</span>
-                                </li>
-                                <li className="flex gap-3">
-                                    <span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>
-                                    <span>Subscriptions may auto-renew unless cancelled prior to renewal.</span>
-                                </li>
-                                <li className="flex gap-3">
-                                    <span className="material-symbols-outlined text-primary mt-0.5">warning</span>
-                                    <span>Failure to comply with payment terms may result in suspension of premium features.</span>
-                                </li>
-                            </ul>
-                        )
-                    },
-                    {
-                        id: "refund",
-                        title: "7. Refund & Cancellation Policy",
-                        content: (
-                            <ul className="space-y-3 text-gray-600 dark:text-gray-400">
-                                <li>• Users may cancel subscriptions at any time.</li>
-                                <li>• Refund eligibility depends on applicable payment provider policies.</li>
-                                <li>• AI Chat reserves the right to refuse refund requests in cases of abuse or excessive usage.</li>
-                            </ul>
-                        )
-                    },
-                    {
-                        id: "usage",
-                        title: "8. Acceptable Use Policy",
-                        content: (
-                            <>
-                                <p className="text-gray-600 dark:text-gray-400 mb-4">You agree NOT to:</p>
-                                <div className="grid md:grid-cols-2 gap-3">
-                                    {[
-                                        "Use the Service for unlawful purposes",
-                                        "Generate harmful, defamatory, or violent content",
-                                        "Violate intellectual property rights",
-                                        "Attempt to reverse engineer or exploit the platform",
-                                        "Circumvent usage limits"
-                                    ].map((item, i) => (
-                                        <div key={i} className="flex gap-2 items-center p-3 rounded-lg bg-red-50/50 dark:bg-red-900/10 border border-red-100 dark:border-red-900/20">
-                                            <span className="material-symbols-outlined text-red-500 text-sm">block</span>
-                                            <span className="text-sm text-gray-700 dark:text-gray-300">{item}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </>
-                        )
-                    },
-                    {
-                        id: "intellectual",
-                        title: "9. Intellectual Property Rights",
-                        content: (
-                            <div className="space-y-4 text-gray-600 dark:text-gray-400">
-                                <p className="leading-relaxed">
-                                    All branding, design, structure, and software remain the exclusive property of AI Chat.
-                                </p>
-                                <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/10 border border-amber-100 dark:border-amber-900/20 font-bold text-amber-800 dark:text-amber-400">
-                                    Unauthorized copying, distribution, or resale is strictly prohibited.
-                                </div>
-                            </div>
-                        )
-                    },
-                    {
-                        id: "user-content",
-                        title: "10. User-Generated Content Responsibility",
-                        content: (
-                            <ul className="space-y-3 text-gray-600 dark:text-gray-400">
-                                <li>• You retain responsibility for any text submitted for processing.</li>
-                                <li>• You must ensure that submitted content does not violate laws or third-party rights.</li>
-                            </ul>
-                        )
-                    },
-                    {
                         id: "disclaimer",
-                        title: "11. AI Disclaimer",
+                        title: "10. Technical Disclaimer & Processing Warranties",
                         content: (
-                            <div className="space-y-4 text-gray-600 dark:text-gray-400">
-                                <p className="leading-relaxed italic">
-                                    AI-generated content may contain inaccuracies, bias, or outdated information.
+                            <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>
+                                    Video Editor is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. While our AI video enhancement and compression models achieve superior quality, final results depend substantially on the resolution, lighting, focus, and audio quality of the source files.
                                 </p>
-                                <p className="leading-relaxed">
-                                    AI Chat makes no guarantees regarding reliability or completeness. Users are solely responsible for verifying outputs before professional or academic use.
+                                <p>
+                                    We do not warrant that processing will be uninterrupted or error-free, as server operations may occasionally undergo maintenance or encounter network latency.
                                 </p>
                             </div>
                         )
                     },
                     {
                         id: "liability",
-                        title: "12. Limitation of Liability",
+                        title: "11. Limitation of Liability",
                         content: (
-                            <>
-                                <p className="text-gray-600 dark:text-gray-400 mb-4">To the maximum extent permitted by law, AI Chat shall not be liable for:</p>
-                                <ul className="space-y-2 text-gray-600 dark:text-gray-400 pl-4">
-                                    <li>• Indirect or consequential damages</li>
-                                    <li>• Loss of profits or data</li>
-                                    <li>• Academic or professional consequences arising from AI outputs</li>
-                                </ul>
-                            </>
-                        )
-                    },
-                    {
-                        id: "indemnification",
-                        title: "13. Indemnification",
-                        content: (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                You agree to indemnify and hold harmless AI Chat against claims arising from misuse or violation of these Terms.
-                            </p>
-                        )
-                    },
-                    {
-                        id: "availability",
-                        title: "14. Service Availability",
-                        content: (
-                            <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                                <p>We do not guarantee uninterrupted or error-free service.</p>
-                                <p>Maintenance, updates, or external API disruptions may affect availability.</p>
+                            <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>
+                                    To the maximum extent permitted by applicable law, AppNaya Technologies shall not be held liable for any indirect, incidental, special, consequential, or punitive damages, or for loss of data, revenues, or profits, arising out of your use or inability to use the Service.
+                                </p>
                             </div>
                         )
                     },
                     {
                         id: "termination",
-                        title: "15. Termination of Access",
+                        title: "12. Termination & Account Deletion",
                         content: (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                We reserve the right to suspend or terminate accounts without notice if violations occur.
-                            </p>
-                        )
-                    },
-                    {
-                        id: "modifications",
-                        title: "16. Modifications to Terms",
-                        content: (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                We may revise these Terms at any time. Continued use constitutes acceptance of revised Terms.
-                            </p>
+                            <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                <p>
+                                    You may stop using Video Editor and terminate your account at any time. To purge your account data and stored media history, visit the <Link href="/delete-account" className="text-primary underline">Delete Account</Link> page.
+                                </p>
+                                <p>
+                                    We reserve the right to suspend or terminate accounts that breach these Terms or engage in abusive or unlawful activity.
+                                </p>
+                            </div>
                         )
                     },
                     {
                         id: "governing-law",
-                        title: "17. Governing Law & Dispute Resolution",
+                        title: "13. Governing Law & Dispute Resolution",
                         content: (
-                            <div className="space-y-3 text-gray-600 dark:text-gray-400">
-                                <p>These Terms shall be governed by applicable laws.</p>
-                                <p>Any disputes shall first be attempted to be resolved amicably before legal action.</p>
-                            </div>
+                            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                                These Terms shall be governed by and construed in accordance with applicable laws. In the event of any controversy or dispute, the parties agree to first seek an informal, good-faith resolution by contacting our legal support team before commencing formal legal proceedings.
+                            </p>
                         )
                     },
                     {
                         id: "contact",
-                        title: "18. Contact Information",
+                        title: "14. Contact Information",
                         content: (
-                            <div className="text-center p-8 rounded-2xl bg-primary/5 border border-primary/10">
-                                <h4 className="text-xl font-bold text-[#131118] dark:text-white mb-2">Legal Inquiries</h4>
-                                <p className="text-[#6b608a] dark:text-[#a097bd] mb-6">For legal inquiries, please contact us at:</p>
+                            <div className="text-center p-8 rounded-2xl bg-primary/5 dark:bg-primary/10 border border-primary/20">
+                                <h4 className="text-xl font-bold text-[#131118] dark:text-white mb-2">
+                                    Legal Inquiries &amp; Support
+                                </h4>
+                                <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm max-w-md mx-auto">
+                                    For inquiries regarding these Terms &amp; Conditions or legal matters, reach out to:
+                                </p>
                                 <a
                                     href="mailto:supportappnaya@gmail.com"
-                                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-semibold hover:opacity-90 transition-opacity"
+                                    className="inline-flex items-center gap-2 px-6 py-3 brand-gradient text-white rounded-xl font-semibold hover:opacity-95 transition-opacity shadow-md shadow-primary/20"
                                 >
-                                    <span className="material-symbols-outlined">mail</span>
+                                    <span className="material-symbols-outlined text-lg">mail</span>
                                     supportappnaya@gmail.com
                                 </a>
+                                <p className="text-xs text-gray-400 mt-4">
+                                    AppNaya Technologies &bull; Project ID: project-716448996918
+                                </p>
                             </div>
                         )
                     }
-                ].map((section, index) => (
+                ].map((section) => (
                     <motion.section
                         key={section.id}
                         id={section.id}
@@ -285,8 +298,9 @@ export default function TermsContent() {
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h2 className="text-2xl font-bold text-[#131118] dark:text-white mb-4">
-                            {section.title}
+                        <h2 className="text-2xl font-bold mb-4 flex items-center gap-3 text-[#131118] dark:text-white">
+                            <span className="w-1.5 h-7 bg-primary rounded-full shrink-0"></span>
+                            <span>{section.title}</span>
                         </h2>
                         {section.content}
                     </motion.section>

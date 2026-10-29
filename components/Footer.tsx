@@ -1,116 +1,157 @@
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "./Logo";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#131118] text-white py-4 border-t border-gray-800">
-            {/* project-716448996918 */}
+        <footer className="bg-[#121016] text-white pt-16 pb-8 border-t border-gray-800">
             <meta name="google-site-verification" content="project-716448996918" />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-gray-800 pb-12">
-                    <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <Image
-                                src="/image/logo.png"
-                                alt="AI Chat Logo"
-                                width={36}
-                                height={36}
-                                className="object-contain rounded-lg"
-                            />
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+                    {/* Brand column */}
+                    <div className="md:col-span-2">
+                        <div className="flex items-center gap-3 mb-4">
+                            <Logo size={36} />
                             <div className="flex flex-col">
-                                <span className="text-xl font-bold">AI Chat</span>
-                                <span className="text-xs text-primary font-semibold">AI Utilities &middot; Project: project-716448996918</span>
+                                <span className="text-xl font-bold tracking-tight">Video Editor</span>
+                                <span className="text-xs text-primary font-semibold">
+                                    Smart Video Enhancement & Utilities
+                                </span>
                             </div>
                         </div>
-                        <p className="text-gray-400 text-sm max-w-xs mb-3">
-                            Revolutionizing the way you write with high-performance AI tools
-                            for every occasion.
+                        <p className="text-gray-400 text-sm max-w-sm mb-4 leading-relaxed">
+                            Compress videos with high visual fidelity, enhance resolution up to 4K with AI, adjust playback speed, extract audio, and manage your media history in one seamless app.
                         </p>
                         <p className="text-xs text-gray-500">
-                            Support: <a href="mailto:supportappnaya@gmail.com" className="text-gray-400 hover:text-white transition-colors">supportappnaya@gmail.com</a>
+                            Support:{" "}
+                            <a
+                                href="mailto:supportappnaya@gmail.com"
+                                className="text-primary hover:underline transition-colors"
+                            >
+                                supportappnaya@gmail.com
+                            </a>
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
-                        {/* <div className="space-y-4">
-                            <h4 className="font-bold">Product</h4>
-                            <ul className="text-gray-400 space-y-2 text-sm">
-                                <li>
-                                    <Link href="#features" className="hover:text-brand-pink">
-                                        Features
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-brand-pink">
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="hover:text-brand-pink">
-                                        API
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div> */}
-                        <div className="space-y-4">
-                            <h4 className="font-bold">Company</h4>
-                            <ul className="text-gray-400 space-y-2 text-sm">
-                                <li>
-                                    <Link href="/about" className="hover:text-brand-pink">
-                                        About
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-brand-pink">
-                                        Contact
-                                    </Link>
-                                </li>
-                                {/*   <li>
-                                    <Link href="#" className="hover:text-brand-pink">
-                                        Blog
-                                    </Link>
-                                </li> */}
-                            </ul>
-                        </div>
-                        <div className="space-y-4">
-                            <h4 className="font-bold">Legal</h4>
-                            <ul className="text-gray-400 space-y-2 text-sm">
-                                <li>
-                                    <Link href="/terms" className="hover:text-brand-pink">
-                                        Terms
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/privacy" className="hover:text-brand-pink">
-                                        Privacy
-                                    </Link>
-                                </li>
-                                {/*  <li>
-                                    <button className="hover:text-red-500 text-left">
-                                        Delete Account
-                                    </button>
-                                </li> */}
-                            </ul>
-                        </div>
+
+                    {/* Features column */}
+                    <div>
+                        <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-4">
+                            Features
+                        </h4>
+                        <ul className="text-gray-400 space-y-2.5 text-sm">
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    Video Compression
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    AI Video Enhancer
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    HD to 2K & 4K Upscale
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    Speed Adjustment
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    Audio Extractor
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#features" className="hover:text-primary transition-colors">
+                                    Data Export & History
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Company column */}
+                    <div>
+                        <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-4">
+                            Company
+                        </h4>
+                        <ul className="text-gray-400 space-y-2.5 text-sm">
+                            <li>
+                                <Link href="/about" className="hover:text-primary transition-colors">
+                                    About Us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="hover:text-primary transition-colors">
+                                    Contact & Support
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#pricing" className="hover:text-primary transition-colors">
+                                    Subscription Plans
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#download" className="hover:text-primary transition-colors">
+                                    Download App
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Legal column */}
+                    <div>
+                        <h4 className="text-sm font-bold uppercase tracking-wider text-gray-300 mb-4">
+                            Legal
+                        </h4>
+                        <ul className="text-gray-400 space-y-2.5 text-sm">
+                            <li>
+                                <Link href="/terms" className="hover:text-primary transition-colors">
+                                    Terms & Conditions
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/privacy" className="hover:text-primary transition-colors">
+                                    Privacy Policy
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/delete-account" className="hover:text-red-400 transition-colors">
+                                    Delete Account
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div className="flex md:flex-row justify-center items-center pt-4 gap-4">
-                    <p className="text-gray-500 text-sm ">
-                        Copyright © 2026 <a href="http://www.appnayatech.com/" target="_blank" rel="noopener noreferrer">AppNaya Technologies</a>. All rights reserved. &middot; Google Cloud Project: <code className="text-xs text-gray-400">project-716448996918</code>
+
+                <div className="flex flex-col md:flex-row justify-between items-center pt-8 gap-4 text-xs text-gray-500">
+                    <p>
+                        Copyright © 2026{" "}
+                        <a
+                            href="http://www.appnayatech.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-gray-300 underline"
+                        >
+                            AppNaya Technologies
+                        </a>
+                        . All rights reserved. &middot; Project:{" "}
+                        <code className="text-gray-400">project-716448996918</code>
                     </p>
-                    {/* <div className="flex gap-6">
-                        <Link
-                            href="#"
-                            className="text-gray-500 hover:text-white transition-colors"
-                        >
-                            <span className="material-symbols-outlined">public</span>
+                    <div className="flex gap-4">
+                        <Link href="/privacy" className="hover:text-gray-300">
+                            Privacy
                         </Link>
-                        <Link
-                            href="#"
-                            className="text-gray-500 hover:text-white transition-colors"
-                        >
-                            <span className="material-symbols-outlined">alternate_email</span>
+                        <span>&middot;</span>
+                        <Link href="/terms" className="hover:text-gray-300">
+                            Terms
                         </Link>
-                    </div> */}
+                        <span>&middot;</span>
+                        <a href="mailto:supportappnaya@gmail.com" className="hover:text-gray-300">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
