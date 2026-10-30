@@ -43,7 +43,7 @@ export default function Hero() {
                                     className="w-full sm:w-auto brand-gradient brand-gradient-hover text-white font-bold py-4 px-9 rounded-xl text-lg transition-all shadow-lg shadow-primary/25 flex items-center justify-center gap-2 cursor-pointer"
                                 >
                                     <span className="material-symbols-outlined text-2xl">download</span>
-                                    <span>Download Video Editor</span>
+                                    <span>Download Video Tools</span>
                                 </motion.button>
                             </Link>
 

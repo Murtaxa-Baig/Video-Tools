@@ -12,7 +12,7 @@ export default function AboutHero() {
                         animate={{ opacity: 1, y: 0 }}
                         className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-6 border border-primary/20"
                     >
-                        <span>About Video Editor</span>
+                        <span>About Video Tools</span>
                     </motion.div>
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.95 }}

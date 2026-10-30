@@ -61,7 +61,7 @@ export default function AboutSection() {
                             Engineered for Creators, Editors &amp; Storytellers
                         </h2>
                         <p className="text-gray-600 dark:text-gray-300 mb-8 text-base sm:text-lg leading-relaxed">
-                            High-definition video production shouldn&apos;t require bulky desktop workstations or hours of rendering. Video Editor brings cutting-edge AI upscaling, high-ratio compression, speed ramping, and audio extraction into an intuitive, seamless mobile and web experience.
+                            High-definition video production shouldn&apos;t require bulky desktop workstations or hours of rendering. Video Tools brings cutting-edge AI upscaling, high-ratio compression, speed ramping, and audio extraction into an intuitive, seamless mobile and web experience.
                         </p>
                         <ul className="space-y-4">
                             {[

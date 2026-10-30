@@ -19,7 +19,7 @@ export default function TermsContent() {
                     Terms &amp; Conditions
                 </h1>
                 <p className="text-[#6b608a] dark:text-[#a097bd] text-lg font-normal leading-relaxed mb-6">
-                    Please read these terms carefully before accessing or using Video Editor services, subscriptions, and video processing utilities.
+                    Please read these terms carefully before accessing or using Video Tools services, subscriptions, and video processing utilities.
                 </p>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">
                     <span className="text-gray-500 dark:text-gray-400">
@@ -43,7 +43,7 @@ export default function TermsContent() {
                         title: "1. Acceptance of Agreement",
                         content: (
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                By downloading, installing, accessing, or using the <strong>Video Editor</strong> application, mobile software, or associated website services (&quot;the Service&quot;), operated by <strong>AppNaya Technologies</strong> (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be legally bound by these Terms &amp; Conditions. If you do not agree to all provisions of these Terms, you must immediately cease use of the Service.
+                                By downloading, installing, accessing, or using the <strong>Video Tools</strong> application, mobile software, or associated website services (&quot;the Service&quot;), operated by <strong>AppNaya Technologies</strong> (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be legally bound by these Terms &amp; Conditions. If you do not agree to all provisions of these Terms, you must immediately cease use of the Service.
                             </p>
                         )
                     },
@@ -54,7 +54,7 @@ export default function TermsContent() {
                             <ul className="space-y-3 text-gray-600 dark:text-gray-300">
                                 <li className="flex flex-col sm:flex-row sm:gap-3">
                                     <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;Platform&quot;:</span>
-                                    <span>Refers to the Video Editor mobile apps (iOS &amp; Android), web applications, and backend processing APIs.</span>
+                                    <span>Refers to the Video Tools mobile apps (iOS &amp; Android), web applications, and backend processing APIs.</span>
                                 </li>
                                 <li className="flex flex-col sm:flex-row sm:gap-3">
                                     <span className="font-bold text-[#131118] dark:text-white min-w-[150px]">&quot;User&quot;:</span>
@@ -80,7 +80,7 @@ export default function TermsContent() {
                         title: "3. Scope of Services",
                         content: (
                             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
-                                <p>Video Editor provides a comprehensive digital media suite enabling users to:</p>
+                                <p>Video Tools provides a comprehensive digital media suite enabling users to:</p>
                                 <div className="grid md:grid-cols-2 gap-3 text-sm">
                                     <div className="p-3.5 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
                                         <strong>1. Video Compression:</strong> High-efficiency bitrate reduction preserving visual quality.
@@ -115,11 +115,11 @@ export default function TermsContent() {
                                         You Retain 100% Ownership of Your Content
                                     </h4>
                                     <p className="text-xs sm:text-sm leading-relaxed">
-                                        You retain all existing copyright, trademarks, and intellectual property rights in your Uploaded Media and the resulting Processed Media. Video Editor claims zero ownership, licensing, or commercial rights over the videos you compress, upscale, or export.
+                                        You retain all existing copyright, trademarks, and intellectual property rights in your Uploaded Media and the resulting Processed Media. Video Tools claims zero ownership, licensing, or commercial rights over the videos you compress, upscale, or export.
                                     </p>
                                 </div>
                                 <p className="text-sm">
-                                    You grant Video Editor only the narrow, non-exclusive, temporary operational license required to receive, encode, enhance, and deliver your media back to you.
+                                    You grant Video Tools only the narrow, non-exclusive, temporary operational license required to receive, encode, enhance, and deliver your media back to you.
                                 </p>
                                 <p className="text-sm">
                                     You warrant and certify that you own or have obtained all necessary licenses, permissions, and rights to submit the videos you process on the Platform.
@@ -132,7 +132,7 @@ export default function TermsContent() {
                         title: "5. Subscription Tiers & Billing Terms",
                         content: (
                             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
-                                <p>Video Editor offers tiered premium subscriptions to enhance processing speed, allow 4K exports, and maintain longer media history:</p>
+                                <p>Video Tools offers tiered premium subscriptions to enhance processing speed, allow 4K exports, and maintain longer media history:</p>
                                 
                                 <div className="space-y-2.5">
                                     <div className="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/60 border border-gray-100 dark:border-gray-800">
@@ -165,7 +165,7 @@ export default function TermsContent() {
                                     You may cancel your subscription at any time directly through the <em>Subscriptions</em> management panel in your Apple ID or Google Play Store settings. Upon cancellation, your subscription remains active until the end of the paid billing interval.
                                 </p>
                                 <p>
-                                    Refund requests are governed by the respective policies of the Apple App Store or Google Play Store. Video Editor cannot directly issue refunds for purchases completed via third-party application stores.
+                                    Refund requests are governed by the respective policies of the Apple App Store or Google Play Store. Video Tools cannot directly issue refunds for purchases completed via third-party application stores.
                                 </p>
                             </div>
                         )
@@ -179,7 +179,7 @@ export default function TermsContent() {
                                     Users have the right to download, backup, and export all their processed media files and metadata. You can trigger individual downloads or request a full data archive from the application interface.
                                 </p>
                                 <p className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/30 text-amber-900 dark:text-amber-300 text-xs">
-                                    <strong>Important Note on Cloud Storage:</strong> While Video Editor maintains your Media History according to your subscription tier, the Service is intended as a processing engine rather than a permanent archival backup. We strongly recommend downloading and preserving your completed videos locally or to your personal cloud storage.
+                                    <strong>Important Note on Cloud Storage:</strong> While Video Tools maintains your Media History according to your subscription tier, the Service is intended as a processing engine rather than a permanent archival backup. We strongly recommend downloading and preserving your completed videos locally or to your personal cloud storage.
                                 </p>
                             </div>
                         )
@@ -189,7 +189,7 @@ export default function TermsContent() {
                         title: "8. Acceptable Use Policy",
                         content: (
                             <div className="space-y-4">
-                                <p className="text-gray-600 dark:text-gray-300 text-sm">You strictly agree NOT to use Video Editor to upload, process, or disseminate:</p>
+                                <p className="text-gray-600 dark:text-gray-300 text-sm">You strictly agree NOT to use Video Tools to upload, process, or disseminate:</p>
                                 <div className="grid md:grid-cols-2 gap-3 text-xs sm:text-sm">
                                     {[
                                         "Infringing or unauthorized copyrighted videos or audio",
@@ -210,10 +210,10 @@ export default function TermsContent() {
                     },
                     {
                         id: "intellectual-property",
-                        title: "9. Video Editor Intellectual Property",
+                        title: "9. Video Tools Intellectual Property",
                         content: (
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
-                                The Video Editor name, logo, graphic designs, interfaces, code, algorithms, and documentation are the exclusive intellectual property of AppNaya Technologies. You may not copy, reverse-engineer, decompile, resell, or distribute any part of the Platform software without written consent.
+                                The Video Tools name, logo, graphic designs, interfaces, code, algorithms, and documentation are the exclusive intellectual property of AppNaya Technologies. You may not copy, reverse-engineer, decompile, resell, or distribute any part of the Platform software without written consent.
                             </p>
                         )
                     },
@@ -223,7 +223,7 @@ export default function TermsContent() {
                         content: (
                             <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
                                 <p>
-                                    Video Editor is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. While our AI video enhancement and compression models achieve superior quality, final results depend substantially on the resolution, lighting, focus, and audio quality of the source files.
+                                    Video Tools is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. While our AI video enhancement and compression models achieve superior quality, final results depend substantially on the resolution, lighting, focus, and audio quality of the source files.
                                 </p>
                                 <p>
                                     We do not warrant that processing will be uninterrupted or error-free, as server operations may occasionally undergo maintenance or encounter network latency.
@@ -248,7 +248,7 @@ export default function TermsContent() {
                         content: (
                             <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
                                 <p>
-                                    You may stop using Video Editor and terminate your account at any time. To purge your account data and stored media history, visit the <Link href="/delete-account" className="text-primary underline">Delete Account</Link> page.
+                                    You may stop using Video Tools and terminate your account at any time. To purge your account data and stored media history, visit the <Link href="/delete-account" className="text-primary underline">Delete Account</Link> page.
                                 </p>
                                 <p>
                                     We reserve the right to suspend or terminate accounts that breach these Terms or engage in abusive or unlawful activity.

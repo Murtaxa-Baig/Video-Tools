@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import TermsContent from "@/components/TermsContent";
 
 export const metadata: Metadata = {
-    title: "Terms & Conditions - Video Editor",
-    description: "Terms and conditions governing the use of Video Editor video editing, compression, AI upscaling, and subscription services.",
+    title: "Terms & Conditions - Video Tools",
+    description: "Terms and conditions governing the use of Video Tools video editing, compression, AI upscaling, and subscription services.",
 };
 
 export default function TermsPage() {

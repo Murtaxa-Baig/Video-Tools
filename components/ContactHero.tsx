@@ -6,7 +6,7 @@ export default function ContactHero() {
                     <span>Help &amp; Inquiries</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-black text-[#131118] dark:text-white mb-4 tracking-tight">
-                    Contact Video Editor Support
+                    Contact Video Tools Support
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                     Have questions about video compression, 4K AI upscaling, subscriptions, or data exports? We&apos;re here to assist you.

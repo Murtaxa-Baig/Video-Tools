@@ -19,7 +19,7 @@ export default function PrivacyContent() {
                     Privacy Policy
                 </h1>
                 <p className="text-[#6b608a] dark:text-[#a097bd] text-lg font-normal leading-relaxed mb-6">
-                    How Video Editor collects, processes, protects, and stores your media files, video processing history, and personal data.
+                    How Video Tools collects, processes, protects, and stores your media files, video processing history, and personal data.
                 </p>
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm">
                     <span className="text-gray-500 dark:text-gray-400">
@@ -43,7 +43,7 @@ export default function PrivacyContent() {
                         title: "1. Introduction",
                         content: (
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                This Privacy Policy outlines the practices of <strong>AppNaya Technologies</strong> regarding the collection, use, storage, and disclosure of personal data and multimedia files when you use <strong>Video Editor</strong> (&quot;the Application&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), including our mobile applications and related web services. We are dedicated to respecting your privacy, safeguarding your personal media, and providing total transparency over your data.
+                                This Privacy Policy outlines the practices of <strong>AppNaya Technologies</strong> regarding the collection, use, storage, and disclosure of personal data and multimedia files when you use <strong>Video Tools</strong> (&quot;the Application&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), including our mobile applications and related web services. We are dedicated to respecting your privacy, safeguarding your personal media, and providing total transparency over your data.
                             </p>
                         )
                     },
@@ -138,7 +138,7 @@ export default function PrivacyContent() {
                         content: (
                             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                                 <p>
-                                    Video Editor provides a built-in <strong>Media History</strong> library to give you convenient access to your generated outputs, compressed files, and extracted audio tracks across sessions.
+                                    Video Tools provides a built-in <strong>Media History</strong> library to give you convenient access to your generated outputs, compressed files, and extracted audio tracks across sessions.
                                 </p>
                                 <ul className="space-y-2.5 list-disc pl-5 text-sm">
                                     <li><strong>Retention Duration:</strong> Processed files remain stored in your history based on your subscription tier (7 days for Weekly, 30 days for Monthly, and unlimited active retention for Yearly subscribers, unless deleted earlier).</li>
@@ -165,7 +165,7 @@ export default function PrivacyContent() {
                                         You can initiate a complete export of your personal data and media history directly through the application settings or by contacting our data protection team:
                                     </p>
                                     <ol className="list-decimal pl-5 space-y-1.5 text-sm">
-                                        <li>Navigate to <strong>Settings → Media History &amp; Data</strong> in the Video Editor application.</li>
+                                        <li>Navigate to <strong>Settings → Media History &amp; Data</strong> in the Video Tools application.</li>
                                         <li>Select <strong>Download All Data</strong> to receive a unified ZIP archive containing your processed videos, extracted audio files, and metadata logs.</li>
                                         <li>Alternatively, send an email to <a href="mailto:supportappnaya@gmail.com" className="text-primary underline">supportappnaya@gmail.com</a> with the subject line <em>&quot;Data Export Request&quot;</em> from your registered account email.</li>
                                     </ol>
@@ -257,7 +257,7 @@ export default function PrivacyContent() {
                         content: (
                             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                                 <p>
-                                    You can permanently delete your Video Editor account at any time. When an account is deleted, your profile information, authentication tokens, media history records, and stored video/audio files are permanently wiped from our production databases.
+                                    You can permanently delete your Video Tools account at any time. When an account is deleted, your profile information, authentication tokens, media history records, and stored video/audio files are permanently wiped from our production databases.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 items-center">
                                     <Link
@@ -277,7 +277,7 @@ export default function PrivacyContent() {
                         title: "11. Children's Privacy",
                         content: (
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                Video Editor does not knowingly solicit or collect personal information from children under the age of 13 (or under 16 in certain jurisdictions). If we discover that a child has provided us with personal information without parental consent, we will promptly delete that information from our servers.
+                                Video Tools does not knowingly solicit or collect personal information from children under the age of 13 (or under 16 in certain jurisdictions). If we discover that a child has provided us with personal information without parental consent, we will promptly delete that information from our servers.
                             </p>
                         )
                     },
@@ -286,7 +286,7 @@ export default function PrivacyContent() {
                         title: "12. Changes to This Privacy Policy",
                         content: (
                             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                We may update this Privacy Policy from time to time to reflect changes in our technology, features, or applicable laws. Any modifications will be posted on this page with an updated Effective Date. Continued use of Video Editor after updates constitutes acceptance of the revised policy.
+                                We may update this Privacy Policy from time to time to reflect changes in our technology, features, or applicable laws. Any modifications will be posted on this page with an updated Effective Date. Continued use of Video Tools after updates constitutes acceptance of the revised policy.
                             </p>
                         )
                     },

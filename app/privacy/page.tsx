@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import PrivacyContent from "@/components/PrivacyContent";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy - Video Editor",
-    description: "Learn how Video Editor handles video processing, protects user media, retains history, and ensures data privacy.",
+    title: "Privacy Policy - Video Tools",
+    description: "Learn how Video Tools handles video processing, protects user media, retains history, and ensures data privacy.",
 };
 
 export default function PrivacyPage() {

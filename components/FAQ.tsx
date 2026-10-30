@@ -7,7 +7,7 @@ const faqs = [
     {
         question: "Does compressing my video reduce visual quality?",
         answer:
-            "No. Video Editor utilizes intelligent adaptive bitrate compression algorithms (H.264, H.265, and AV1) that selectively compress redundant digital data while preserving focal details, colors, and motion sharpness. In most cases, file size drops by up to 80% without noticeable quality loss.",
+            "No. Video Tools utilizes intelligent adaptive bitrate compression algorithms (H.264, H.265, and AV1) that selectively compress redundant digital data while preserving focal details, colors, and motion sharpness. In most cases, file size drops by up to 80% without noticeable quality loss.",
     },
     {
         question: "How does the AI HD to 2K / 4K upscaling work?",
@@ -32,7 +32,7 @@ const faqs = [
     {
         question: "Is my video data secure and private?",
         answer:
-            "Absolutely. Your uploaded files are encrypted during transit (TLS 1.3) and at rest. Video Editor processes your files securely and never uses your personal videos or extracted audio to train public AI models. You can delete items from history or delete your entire account whenever you wish.",
+            "Absolutely. Your uploaded files are encrypted during transit (TLS 1.3) and at rest. Video Tools processes your files securely and never uses your personal videos or extracted audio to train public AI models. You can delete items from history or delete your entire account whenever you wish.",
     },
 ];
 
@@ -50,7 +50,7 @@ export default function FAQ() {
                         Frequently Asked Questions
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-base">
-                        Everything you need to know about Video Editor, AI enhancement, subscriptions, and data exports.
+                        Everything you need to know about Video Tools, AI enhancement, subscriptions, and data exports.
                     </p>
                 </div>
 

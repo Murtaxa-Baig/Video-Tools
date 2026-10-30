@@ -144,7 +144,7 @@ export default function DeleteAccount() {
                         >
                             <div className="flex flex-col gap-2 text-center">
                                 <h1 className="text-[#131118] dark:text-white text-4xl mt-8 font-black leading-tight tracking-[-0.033em]">
-                                    Delete Video Editor Account
+                                    Delete Video Tools Account
                                 </h1>
                                 <p className="text-[#6b608a] dark:text-gray-400 text-lg font-normal leading-normal">
                                     We&apos;re sorry to see you go. This process will permanently remove your account and media history.

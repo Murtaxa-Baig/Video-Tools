@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./Logo";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -10,11 +10,17 @@ export default function Footer() {
                     {/* Brand column */}
                     <div className="md:col-span-2">
                         <div className="flex items-center gap-3 mb-4">
-                            <Logo size={36} />
+                            <Image
+                                src="/images/logo.png"
+                                alt="Video Tools Logo"
+                                width={38}
+                                height={38}
+                                className="object-contain rounded-xl"
+                            />
                             <div className="flex flex-col">
-                                <span className="text-xl font-bold tracking-tight">Video Editor</span>
+                                <span className="text-xl font-bold tracking-tight">Video Tools</span>
                                 <span className="text-xs text-primary font-semibold">
-                                    Smart Video Enhancement & Utilities
+                                    Smart Video Enhancement &amp; Utilities
                                 </span>
                             </div>
                         </div>
@@ -50,7 +56,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/#features" className="hover:text-primary transition-colors">
-                                    HD to 2K & 4K Upscale
+                                    HD to 2K &amp; 4K Upscale
                                 </Link>
                             </li>
                             <li>
@@ -65,7 +71,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/#features" className="hover:text-primary transition-colors">
-                                    Data Export & History
+                                    Data Export &amp; History
                                 </Link>
                             </li>
                         </ul>
@@ -84,12 +90,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/contact" className="hover:text-primary transition-colors">
-                                    Contact & Support
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/#pricing" className="hover:text-primary transition-colors">
-                                    Subscription Plans
+                                    Contact &amp; Support
                                 </Link>
                             </li>
                             <li>
@@ -108,7 +109,7 @@ export default function Footer() {
                         <ul className="text-gray-400 space-y-2.5 text-sm">
                             <li>
                                 <Link href="/terms" className="hover:text-primary transition-colors">
-                                    Terms & Conditions
+                                    Terms &amp; Conditions
                                 </Link>
                             </li>
                             <li>

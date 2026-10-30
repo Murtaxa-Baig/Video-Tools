@@ -70,16 +70,16 @@ export default function CTASection() {
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full sm:w-auto bg-white text-[#131118] font-bold py-4 px-10 rounded-xl text-base sm:text-lg transition-all shadow-lg hover:bg-gray-50 cursor-pointer"
                                 >
-                                    Download Video Editor
+                                    Download Video Tools
                                 </motion.button>
                             </Link>
 
                             <Link
-                                href="/#pricing"
+                                href="/#features"
                                 onClick={(e) => {
                                     if (pathname === "/") {
                                         e.preventDefault();
-                                        document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
+                                        document.getElementById("features")?.scrollIntoView({ behavior: "smooth" });
                                     }
                                 }}
                                 className="w-full sm:w-auto"
@@ -89,7 +89,7 @@ export default function CTASection() {
                                     whileTap={{ scale: 0.95 }}
                                     className="w-full sm:w-auto bg-black/20 hover:bg-black/30 border border-white/40 text-white font-bold py-4 px-10 rounded-xl text-base sm:text-lg transition-all cursor-pointer backdrop-blur-sm"
                                 >
-                                    View Subscription Tiers
+                                    Explore Features
                                 </motion.button>
                             </Link>
                         </motion.div>

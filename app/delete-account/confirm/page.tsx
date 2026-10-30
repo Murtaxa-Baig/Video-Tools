@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import DeleteConfirmForm from "@/components/DeleteConfirmForm";
 
 export const metadata: Metadata = {
-    title: "Confirm Account Deletion - Video Editor",
-    description: "Verify your identity and confirm deletion of your Video Editor account.",
+    title: "Confirm Account Deletion - Video Tools",
+    description: "Verify your identity and confirm deletion of your Video Tools account.",
 };
 
 export default function DeleteAccountConfirmPage() {

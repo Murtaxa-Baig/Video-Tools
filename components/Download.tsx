@@ -16,7 +16,7 @@ export default function Download() {
                         <span>Mobile &amp; Web Ready</span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl font-black text-[#131118] dark:text-white mb-4 tracking-tight">
-                        Experience Next-Gen Video Editor Today
+                        Experience Next-Gen Video Tools Today
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg">
                         Available on iPhone, iPad, and Android. Process videos in the cloud or directly on your device with lightning speed.

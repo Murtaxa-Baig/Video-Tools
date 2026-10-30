@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "./Logo";
+import Image from "next/image";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +29,16 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 group min-w-0">
-                        <Logo size={36} className="transition-transform group-hover:scale-105" />
+                        <Image
+                            src="/images/logo.png"
+                            alt="Video Tools Logo"
+                            width={36}
+                            height={36}
+                            className="object-contain rounded-xl transition-transform group-hover:scale-105"
+                            priority
+                        />
                         <span className="text-[#131118] dark:text-white text-xl font-black tracking-tight truncate">
-                            Video Editor
+                            Video Tools
                         </span>
                     </Link>
 
@@ -98,28 +105,16 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
                 Home
             </Link>
 
-            <Link
-                href="/#features"
-                onClick={handleAnchorClick("features")}
-                className={linkClass("/#features")}
-            >
-                Features
-            </Link>
-
-            <Link
-                href="/#pricing"
-                onClick={handleAnchorClick("pricing")}
-                className={linkClass("/#pricing")}
-            >
-                Pricing
-            </Link>
-
-            <Link href="/about" onClick={onClick} className={linkClass("/about")}>
-                About
-            </Link>
-
             <Link href="/contact" onClick={onClick} className={linkClass("/contact")}>
                 Contact
+            </Link>
+
+            <Link href="/privacy" onClick={onClick} className={linkClass("/privacy")}>
+                Privacy
+            </Link>
+
+            <Link href="/terms" onClick={onClick} className={linkClass("/terms")}>
+                Terms
             </Link>
 
             <Link
@@ -129,7 +124,7 @@ function NavLinks({ mobile = false, onClick }: NavLinksProps) {
                     mobile ? "mt-2 text-center" : ""
                 } text-sm font-bold px-6 py-2.5 rounded-xl transition-all brand-gradient text-white hover:opacity-95 shadow-md hover:shadow-lg`}
             >
-                Download App
+                Get App
             </Link>
         </>
     );
